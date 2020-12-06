@@ -2,7 +2,7 @@ import matplotlib.pylab as plt
 import cv2
 import numpy as np
 
-def region_of_interest(img, vertices):
+def region_of_interest(img, vertices):#ROI may vary from frame to frame, these values are for my input 
     mask = np.zeros_like(img)
     #channel_count = img.shape[2]
     match_mask_color = 255
