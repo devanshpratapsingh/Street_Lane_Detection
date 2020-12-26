@@ -2,7 +2,7 @@ import matplotlib.pylab as plt
 import cv2
 import numpy as np
 
-def region_of_interest(img, vertices):#ROI may vary from frame to frame, these values are for my input 
+def region_of_interest(img, vertices):
     mask = np.zeros_like(img)
     #channel_count = img.shape[2]
     match_mask_color = 255
@@ -26,7 +26,7 @@ def main(image):
      height = image.shape[0]
      width = image.shape[1]
 
-     roi_vertices = [(0, height-70), (width / 2.3, height / 2.5), (width, height-70)]
+     roi_vertices = [(0, height-70), (width / 2.3, height / 2.5), (width, height-70)]#ROI may vary from frame to frame, these values are for my input 
 
      gray_scale_image = cv2.cvtColor(image, cv2.COLOR_RGB2GRAY)
      canny_image = cv2.Canny(gray_scale_image, 100, 120)
