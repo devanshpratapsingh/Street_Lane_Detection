@@ -1,2 +1,2 @@
 # Street_Lane_Detection
-It's a simple OpenCV project that detects lanes on a road
+It's a simple OpenCV project that used Canny edge detection and Hough line transformation to detects lanes on a road
